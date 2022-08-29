@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post #{{blog.id}}</title>
+</head>
+<body>
+  <h1>Blog Post #{{blog.id}}</h1>
+  <h3>{{ blog.title }} </h3>
+  <p>{{ blog.content}} </p>
+  <p>by {{blog.user.first_name}} {{blog.user.last_name}}</p>
+  <a href="/edit/posts/{{blog.id}}">Edit Post</a>
+  <br>
+  <a href="/{{blog.user.id}}">Go Back</a>
+  <br>
+  <a href="/delete/{{blog.id}}">Delete</a>
+  
+</body>
+</html>
